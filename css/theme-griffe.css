@@ -1,0 +1,37 @@
+/* =========================================
+   THÈME : LA GRIFFE (Surcharge)
+   ========================================= */
+:root {
+    --ow-neon-blue: #d60000;       /* Rouge sang */
+    --ow-dark-bg: #111111;         /* Noir / Gris extrêmement foncé */
+    --ow-panel-bg: #1a1a1a;        /* Gris foncé opaque pour les panneaux */
+    --text-main: #e0e0e0;          /* Gris clair pour le texte (moins agressif que le blanc pur) */
+    --ow-orange: #ff3333;          /* Rouge vif pour les clics/survols */
+}
+
+/* 1. Réduction drastique du "glowing effect" sur les titres */
+h1, h2, h3 {
+    text-shadow: 0 0 3px rgba(214, 0, 0, 0.8); /* Glow rouge très léger et subtil */
+}
+
+/* 2. Écrasement des ombres bleues du Data Pad de base */
+.data-pad-container {
+    background-color: rgba(20, 20, 20, 0.95); /* Fond gris très foncé */
+    border: 1px solid #4a0000; /* Bordure rouge sombre */
+    box-shadow: 0 0 8px rgba(214, 0, 0, 0.1); /* Ombre rouge quasi imperceptible */
+}
+
+/* 3. Grille de fond plus discrète et sombre */
+body {
+    background-image: 
+        linear-gradient(rgba(255, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+/* 4. Ajustement des boutons de la timeline pour ce thème */
+.timeline-link {
+    background-color: #222222;
+}
+.timeline-link:hover {
+    box-shadow: 0 0 8px var(--ow-neon-blue);
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Nevermore - Base de données Overwatch</title>
+	<link rel="icon" type="image/png" href="../images/interface/owlogo.png"">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <button class="hamburger-btn">☰ Menu</button>
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="factions/factionsx.html">Factions</a></li>
+            <li><a href="gameplay.html">Gameplay</a></li>
+            <li><a href="histoire.html">Histoire</a></li>
+            <li><a href="esport.html">E-sport</a></li>
+            <li><a href="mateam.html" class="active">Ma Team</a></li>
+            <li><a href="heros/herosx.html">Héros</a></li>
+            <li><a href="cartes/cartesx.html">Cartes</a></li>
+        </ul>
+    </nav>
+
+    <main class="data-pad-container">
+        
+        <header class="intro-section">
+            <h1>Opération : Nevermore</h1>
+            <h2>Archives de l'escouade</h2>
+            <p>
+                Fondée en 2017 sous l'initiative de l'agent "Kjellska", l'escouade <strong>Nevermore</strong> tire son nom et son emblème du célèbre poème d'Edgar Allan Poe, <em>Le Corbeau</em>. Malgré les nombreuses restructurations et les tempêtes traversées par l'équipe, l'agent "OiKattso" demeure aujourd'hui le dernier membre fondateur encore en activité, porteur de l'héritage d'origine.
+            </p>
+        </header>
+
+        <hr class="sci-fi-divider">
+
+        <section class="roster-section">
+            <h3>Effectif Actuel (Roster)</h3>
+            <p>
+                L'escouade Nevermore est actuellement en phase de consolidation pour valider un niveau d'engagement de rang <strong>Diamant</strong>. Voici la classification de nos agents actifs :
+            </p>
+            
+            <div class="roster-grid">
+                <div class="roster-card">
+                    <h4>Escouade Principale</h4>
+                    <ul>
+                        <li><strong>LadyXMC</strong> - Division Dégâts (DPS)</li>
+                        <li><strong>ChatonReveur</strong> - Division Dégâts (DPS)</li>
+                        <li><strong>MzKalyani</strong> - Division Soutien (Flex Support)</li>
+                        <li><strong>OiKattso</strong> - Division Soutien (Main Support)</li>
+                        <li><em>[Poste de Tank : En attente d'assignation]</em></li>
+                    </ul>
+                </div>
+
+                <div class="roster-card">
+                    <h4>Personnel de Réserve & Encadrement</h4>
+                    <ul>
+                        <li><strong>Shig</strong> - Agent Remplaçant</li>
+                        <li><strong>BaiValOssé</strong> - Agent à l'essai (Tryout)</li>
+                        <li><strong>Sawl</strong> - Instructeur Tactique (Coach)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="recruitment-section">
+            <h3>Objectifs & Recrutement</h3>
+            <p>
+                La stabilité est la clé de toute victoire. Notre objectif prioritaire est de finaliser notre effectif Diamant afin de nous déployer officiellement sur les serveurs de la <strong>FACEIT League</strong>.
+            </p>
+            <p>
+                <strong>Profils recherchés :</strong> Nous sommes actuellement à la recherche d'un agent spécialiste de la première ligne (Tank) pour compléter notre escouade principale, ainsi que de personnel administratif pour gérer l'intendance et l'organisation de l'équipe (Staff de gestion).
+            </p>
+        </section>
+
+        <section class="contact-section">
+            <h3>Terminal de Communication (Rejoignez-nous)</h3>
+            <p>
+                Que vous souhaitiez soumettre votre candidature en tant qu'agent, rejoindre le personnel de gestion, ou proposer un partenariat tactique, veuillez remplir le formulaire ci-dessous. Les données seront cryptées et envoyées directement à notre quartier général (<em>teamnevermore.gg@gmail.com</em>).
+            </p>
+
+            <form action="mailto:teamnevermore.gg@gmail.com" method="post" enctype="text/plain" class="ow-form">
+                
+                <div class="form-group">
+                    <label for="pseudo">Identifiant / Pseudo :</label>
+                    <input type="text" id="pseudo" name="pseudo" class="ow-input" required placeholder="Ex: Tracer76">
+                </div>
+
+                <div class="form-group">
+                    <label for="objet">Objet de la requête :</label>
+                    <select id="objet" name="objet" class="ow-input" required>
+                        <option value="" disabled selected>-- Sélectionnez un motif --</option>
+                        <option value="Candidature Joueur (Tank)">Candidature Joueur (Tank)</option>
+                        <option value="Candidature Staff / Gestion">Candidature Staff / Gestion</option>
+                        <option value="Proposition de Scrim / Entraînement">Proposition de Scrim / Entraînement</option>
+                        <option value="Partenariat">Demande de Partenariat</option>
+                        <option value="Autre">Autre requête</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Rapport détaillé :</label>
+                    <textarea id="message" name="message" rows="6" class="ow-input" required placeholder="Indiquez votre rang actuel, votre expérience et vos motivations..."></textarea>
+                </div>
+
+                <button type="submit" class="ow-submit-btn">Transmettre le rapport</button>
+
+            </form>
+        </section>
+		
+	<footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2026 Blizzard Entertainment, Inc. Tous droits réservés. Overwatch est une marque déposée de Blizzard Entertainment.</p>
+            <p><strong>Projet Scolaire (EPS Châtelet)</strong> - Réalisé dans le cadre du module "Conception de pages Web". Ce site n'a aucun but commercial.</p>
+            <ul class="footer-links">
+                <li><a href="sources.html">Sources & Mentions Légales</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+	</main>
+</body>
+
+</html>

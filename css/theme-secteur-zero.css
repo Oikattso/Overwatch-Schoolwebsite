@@ -1,0 +1,66 @@
+/* =========================================
+   THÈME : SECTEUR ZÉRO (Thème Clair Forcé)
+   ========================================= */
+:root {
+    --ow-neon-blue: #9d4edd;       /* Mauve électrique */
+    --ow-dark-bg: #ffffff;         /* Fond BLANC PUR */
+    --ow-panel-bg: #f4f5f7;        /* Gris très très clair pour les éléments */
+    --text-main: #1a1a1a;          /* Texte NOIR / Gris très foncé */
+    --ow-orange: #7b2cbf;          /* Mauve profond pour les survols */
+}
+
+/* 1. Suppression TOTALE de l'effet Néon sur les titres */
+h1, h2, h3 {
+    text-shadow: none; /* On retire le glow */
+    color: var(--ow-neon-blue);
+    font-weight: 900;
+}
+
+/* 2. Adaptation du Data Pad (plus d'ombre bleue, fond blanc) */
+.data-pad-container {
+    background-color: #ffffff;
+    border: 2px solid var(--ow-neon-blue);
+    /* Ombre classique (grise) de site web clair, pas de lumière néon */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+}
+
+/* 3. Grille de fond "Clinique" très légère */
+body {
+    background-image: 
+        linear-gradient(rgba(157, 78, 221, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(157, 78, 221, 0.05) 1px, transparent 1px);
+}
+
+/* 4. Adaptation des boutons (Timeline, Ancres) pour le fond clair */
+.timeline-link, .anchor-btn {
+    background-color: #ffffff;
+    color: var(--text-main) !important;
+    border-color: #cccccc;
+}
+.timeline-link:hover, .anchor-btn:hover {
+    background-color: var(--ow-neon-blue);
+    color: #ffffff !important;
+    border-color: var(--ow-neon-blue);
+    box-shadow: none; /* Pas de glow au survol */
+}
+
+/* 5. Adaptation des Tableaux (sinon ils restent bleu nuit !) */
+.ow-table {
+    border-color: #dddddd;
+    background-color: #ffffff;
+}
+.ow-table th {
+    background-color: #f0ebf5; /* Petit fond mauve très clair */
+    color: var(--ow-neon-blue);
+}
+.ow-table td {
+    border-bottom: 1px solid #eeeeee;
+}
+.ow-table tr:hover {
+    background-color: rgba(157, 78, 221, 0.05);
+}
+
+/* Ligne de séparation */
+.sci-fi-divider {
+    background-image: linear-gradient(to right, transparent, #cccccc, transparent);
+}

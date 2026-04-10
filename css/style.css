@@ -1,0 +1,759 @@
+/* =========================================
+   1. VARIABLES (Palette Overwatch / Sci-Fi)
+   ========================================= */
+:root {
+    --ow-neon-blue: #00c3ff;       
+    --ow-dark-bg: #0b192c;         
+    --ow-panel-bg: rgba(0, 195, 255, 0.05); 
+    --text-main: #e0f7fa;          
+    --ow-orange: #f99e1a;          
+}
+
+/* =========================================
+   2. POLICES (Typographie)
+   ========================================= */
+@font-face {
+    font-family: 'BigNoodleTitling';
+    src: url('../fonts/big_noodle_titling.woff2') format('woff2'),
+         url('../fonts/big_noodle_titling.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =========================================
+   3. STRUCTURE GÉNÉRALE ET ALIGNEMENT
+   ========================================= */
+body {
+    background-color: var(--ow-dark-bg);
+    color: var(--text-main);
+    font-family: 'Courier New', Courier, monospace; 
+    margin: 0;
+    padding: 20px;
+    background-image: 
+        linear-gradient(var(--ow-panel-bg) 1px, transparent 1px),
+        linear-gradient(90deg, var(--ow-panel-bg) 1px, transparent 1px);
+    background-size: 30px 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; 
+}
+
+/* =========================================
+   4. MENU DE NAVIGATION (Style Overwatch)
+   ========================================= */
+.main-nav {
+    width: 300px; 
+}
+
+.hamburger-btn {
+    display: none; 
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px; 
+}
+
+.nav-links a {
+    display: block;
+    background-color: #f4f5f7;
+    color: #1a1a1a;
+    font-family: 'BigNoodleTitling', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: var(--ow-neon-blue);
+    color: #ffffff;
+    box-shadow: 0 0 15px var(--ow-neon-blue);
+    padding-left: 30px; 
+}
+
+.nav-links a.active {
+    background-color: var(--ow-orange);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(249, 158, 26, 0.5);
+}
+
+/* =========================================
+   5. CONTENEUR PRINCIPAL (Le Data Pad)
+   ========================================= */
+.data-pad-container {
+    flex: 1; 
+    background-color: rgba(11, 25, 44, 0.8);
+    border: 1px solid var(--ow-neon-blue);
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.2), inset 0 0 10px rgba(0, 195, 255, 0.1);
+}
+
+h1, h2, h3 {
+    font-family: 'BigNoodleTitling', sans-serif;
+    color: var(--ow-neon-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px var(--ow-neon-blue), 0 0 15px rgba(0, 195, 255, 0.5);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.data-pad-container p a,
+.data-pad-container li a {
+    color: var(--ow-orange);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dashed var(--ow-orange);
+    transition: all 0.3s ease;
+}
+
+.data-pad-container p a:hover,
+.data-pad-container li a:hover {
+    color: var(--ow-dark-bg);
+    background-color: var(--ow-orange);
+    box-shadow: 0 0 10px var(--ow-orange);
+    border-bottom: 1px solid transparent;
+}
+
+/* =========================================
+   6. GRILLE DU MENU CENTRAL (Accueil/Sous-menus)
+   ========================================= */
+.visual-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: rgba(0, 195, 255, 0.05);
+    border: 1px solid var(--ow-neon-blue);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+    background-color: rgba(0, 195, 255, 0.2);
+    box-shadow: 0 0 15px var(--ow-neon-blue), inset 0 0 20px rgba(0, 195, 255, 0.4);
+    transform: translateY(-5px); 
+}
+
+.grid-title {
+    font-family: 'BigNoodleTitling', sans-serif;
+    font-size: 36px;
+    color: var(--text-main);
+    text-transform: uppercase;
+    text-shadow: 0 0 5px var(--ow-neon-blue);
+}
+
+/* =========================================
+   7. LIGNE DU TEMPS & ANCRES (Page Histoire)
+   ========================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+.timeline-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 195, 255, 0.05);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--ow-neon-blue);
+    margin: 30px 0;
+    overflow-x: auto; 
+}
+
+.timeline-link {
+    font-family: 'BigNoodleTitling', sans-serif;
+    font-size: 24px;
+    color: var(--text-main);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: var(--ow-dark-bg);
+    border: 2px solid var(--ow-neon-blue);
+    border-radius: 3px;
+    white-space: nowrap; 
+    transition: all 0.3s ease;
+}
+
+.timeline-link:hover {
+    background-color: var(--ow-neon-blue);
+    color: #fff;
+    box-shadow: 0 0 15px var(--ow-neon-blue);
+    transform: scale(1.05); 
+}
+
+.timeline-connector {
+    flex-grow: 1; 
+    height: 2px;
+    background-color: var(--ow-neon-blue);
+    box-shadow: 0 0 5px var(--ow-neon-blue);
+    margin: 0 10px;
+    min-width: 20px;
+}
+
+.sci-fi-divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, var(--ow-neon-blue), transparent);
+    margin: 40px 0;
+}
+
+.history-block {
+    margin-bottom: 60px;
+    padding-left: 20px;
+    border-left: 3px solid var(--ow-orange); 
+}
+
+.history-block h3 {
+    scroll-margin-top: 40px; 
+}
+
+/* =========================================
+   8. TABLEAUX (Page Gameplay)
+   ========================================= */
+.ow-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 30px 0;
+    background-color: var(--ow-panel-bg);
+    border: 1px solid var(--ow-neon-blue);
+}
+
+.ow-table th, .ow-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 195, 255, 0.2);
+}
+
+.ow-table th {
+    font-family: 'BigNoodleTitling', sans-serif;
+    font-size: 24px;
+    color: var(--ow-orange);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(11, 25, 44, 0.9); 
+}
+
+.ow-table tr:hover {
+    background-color: rgba(0, 195, 255, 0.1);
+}
+
+/* =========================================
+   9. ROSTER ET FORMULAIRE (Page Ma Team)
+   ========================================= */
+.roster-grid {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap; 
+}
+
+.roster-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: rgba(0, 195, 255, 0.05);
+    border: 1px solid rgba(0, 195, 255, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 195, 255, 0.05);
+}
+
+.roster-card h4 {
+    color: var(--ow-orange);
+    font-family: 'BigNoodleTitling', sans-serif;
+    font-size: 24px;
+    margin-top: 0;
+    border-bottom: 1px solid var(--ow-orange);
+    padding-bottom: 5px;
+}
+
+.roster-card ul {
+    list-style-type: square;
+    color: var(--text-main);
+    padding-left: 20px;
+}
+
+.roster-card li {
+    margin-bottom: 10px;
+}
+
+.ow-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    background-color: rgba(11, 25, 44, 0.9);
+    padding: 30px;
+    border: 1px solid var(--ow-neon-blue);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--ow-neon-blue);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.ow-input {
+    background-color: rgba(0, 195, 255, 0.05);
+    border: 1px solid var(--ow-neon-blue);
+    color: #fff;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.ow-input:focus {
+    outline: none;
+    background-color: rgba(0, 195, 255, 0.15);
+    box-shadow: 0 0 10px var(--ow-neon-blue);
+}
+
+select.ow-input option {
+    background-color: var(--ow-dark-bg); 
+    color: var(--text-main); 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ow-submit-btn {
+    background-color: var(--ow-orange);
+    color: #fff;
+    font-family: 'BigNoodleTitling', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.ow-submit-btn:hover {
+    background-color: #fff;
+    color: var(--ow-orange);
+    box-shadow: 0 0 15px var(--ow-orange);
+    transform: scale(1.02);
+}
+
+/* =========================================
+   11. NAVIGATION INTERNE ET ANCRES (Page Tank/Héros)
+   ========================================= */
+
+/* Le mini-menu pour les sous-rôles */
+.anchor-menu {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.anchor-btn {
+    background-color: rgba(0, 195, 255, 0.1);
+    border: 1px solid var(--ow-neon-blue);
+    color: var(--ow-neon-blue) !important; /* Remplacer la couleur classique des liens */
+    padding: 8px 15px;
+    border-radius: 3px;
+    text-decoration: none !important;
+    font-family: 'BigNoodleTitling', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.anchor-btn:hover {
+    background-color: var(--ow-neon-blue);
+    color: var(--ow-dark-bg) !important;
+    box-shadow: 0 0 10px var(--ow-neon-blue);
+}
+
+/* Alignement du titre du tableau et du bouton "Remonter" */
+.table-header-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    border-bottom: 2px solid var(--ow-neon-blue);
+    padding-bottom: 5px;
+}
+
+/* Attention au décalage pour le scroll fluide ! */
+.table-header-group h3 {
+    margin: 0;
+    border: none;
+    scroll-margin-top: 40px; /* Evite que le titre soit collé sous la barre du navigateur */
+}
+
+.back-to-top-btn {
+    font-size: 14px;
+    color: var(--ow-orange) !important;
+    text-decoration: none !important;
+    border: 1px solid var(--ow-orange);
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+    background-color: var(--ow-orange);
+    color: var(--ow-dark-bg) !important;
+}
+
+/* Le style de la photo du héros */
+.hero-avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Coupe l'image proprement si elle n'est pas tout à fait carrée */
+    object-position: top; /* Centre sur le visage du personnage */
+    background-color: var(--ow-dark-bg); /* Fond de secours si l'image ne charge pas */
+    border: 1px solid var(--ow-orange);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(249, 158, 26, 0.3); /* Petite lueur orange autour de la photo */
+}
+
+/* =========================================
+   12. EFFETS SPECIAUX DE TEXTE
+   ========================================= */
+
+/* Effet "Texte caviardé / Document censuré" */
+.redacted {
+    background-color: #000; /* Fond noir */
+    color: #000;            /* Texte noir (invisible) */
+    text-decoration: line-through;
+    padding: 0 5px;
+    border-radius: 2px;
+    cursor: not-allowed;
+    user-select: none; /* Empêche de surligner le texte pour le lire */
+}
+
+/* Optionnel : révèle très légèrement le texte au survol pour les curieux */
+.redacted:hover {
+    color: #333; 
+}
+
+/* =========================================
+   13. EFFETS DE SURVOL SPECIFIQUES (Factions)
+   ========================================= */
+
+/* --- LA GRIFFE : Fond Noir, Bordure et texte Rouge --- */
+.faction-griffe:hover {
+    background-color: #111111 !important;
+    border-color: #d60000 !important;
+    box-shadow: 0 0 15px #d60000, inset 0 0 20px rgba(214, 0, 0, 0.4) !important;
+}
+
+.faction-griffe:hover .grid-title {
+    color: #d60000;
+    text-shadow: 0 0 5px rgba(214, 0, 0, 0.8);
+}
+
+/* --- SECTEUR ZÉRO : Fond Blanc, Bordure et texte Mauve --- */
+.faction-null:hover {
+    background-color: #ffffff !important;
+    border-color: #9d4edd !important;
+    box-shadow: 0 0 15px #9d4edd, inset 0 0 20px rgba(157, 78, 221, 0.4) !important;
+    transform: translateY(-5px); /* On garde l'effet de soulèvement */
+}
+
+.faction-null:hover .grid-title {
+    color: #1a1a1a; /* Texte foncé pour lire sur le fond blanc */
+    text-shadow: none; /* Pas de néon sur fond blanc */
+}
+
+/* --- FACTIONS MINEURES : Fond Gris, Bordure et texte Orange --- */
+.faction-mineures:hover {
+    background-color: #333333 !important;
+    border-color: var(--ow-orange) !important;
+    box-shadow: 0 0 15px var(--ow-orange), inset 0 0 20px rgba(249, 158, 26, 0.4) !important;
+}
+
+.faction-mineures:hover .grid-title {
+    color: var(--ow-orange);
+    text-shadow: 0 0 5px var(--ow-orange);
+}
+
+/* =========================================
+   14. CARTE INTERACTIVE ET LISTES DE CARTES
+   ========================================= */
+
+/* Boîte d'avertissement */
+.warning-box {
+    background-color: rgba(255, 17, 17, 0.1);
+    border-left: 4px solid #ff1111;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 0.9em;
+    color: #ffd6d6;
+}
+
+/* Agrandissement du conteneur de la carte pour la précision et adaptation auto */
+.world-map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    
+    /* LA MAGIE EST ICI : On remplace height par aspect-ratio */
+    aspect-ratio: 16 / 9; /* Maintient les proportions exactes de l'image */
+    height: auto; 
+    
+    margin: 0 auto 40px auto;
+    background-color: #0b192c;
+    border-radius: 5px;
+    box-shadow: inset 0 0 20px rgba(0, 195, 255, 0.2);
+    
+    /* On force l'image à se calquer exactement sur la boîte sans rogner */
+    background-size: 100% 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+/* Réduit légèrement le texte des tooltips sur petits écrans */
+@media (max-width: 768px) {
+    .map-pin::after {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+}
+
+/* Zone Hors-Monde ajustée avec son pin ROUGE */
+.off-world-zone {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px dashed var(--ow-neon-blue);
+    padding: 10px;
+    background-color: rgba(11, 25, 44, 0.8);
+    border-radius: 5px;
+    text-align: center;
+    z-index: 20;
+}
+
+/* S'assurer que le tooltip CSS est lisible */
+.map-pin::after {
+    /* ... (les tooltips restent mauves électriques de base) */
+}
+
+/* Réduction drastique de la taille des pins pour la précision */
+.map-pin {
+    position: absolute;
+    width: 8px; /* Plus petit (8px contre 12px) */
+    height: 8px; /* Plus petit (8px contre 12px) */
+    background-color: #fff; /* Couleur de base par défaut (Blanc) */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px #fff; /* Glow blanc subtil */
+    transform: translate(-50%, -50%); /* Centre le point sur sa coordonnée */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    z-index: 5; /* Légèrement plus élevé pour tooltips */
+}
+
+/* --- CLASSIFICATION DES PINS PAR COULEUR --- */
+
+/* Points de base (par défaut, déjà blanc, mais pour être propre) */
+.pin-base {
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+/* Points Clash (Orange) */
+.pin-clash {
+    background-color: #f99e1a;
+    box-shadow: 0 0 10px #f99e1a;
+}
+
+/* Points Attaque (Rouge) */
+.pin-attack {
+    background-color: #ff1111;
+    box-shadow: 0 0 10px #ff1111;
+}
+
+/* Hover effect ajusté pour ne pas changer de couleur, juste de taille */
+.map-pin:hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    /* Pas de changement de background-color au survol, juste de taille */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glow neutre pour tooltips */
+    z-index: 10; /* Passe au-dessus des autres au survol */
+}
+
+/* S'assurer que les pins de couleur ne changent pas de couleur au survol non plus */
+.pin-clash:hover {
+    box-shadow: 0 0 15px #f99e1a;
+}
+.pin-attack:hover {
+    box-shadow: 0 0 15px #ff1111;
+}
+
+/* --- LE SYSTÈME D'INFOBULLES (TOOLTIPS) 100% CSS --- */
+.map-pin::after {
+    content: attr(data-tooltip); /* Récupère le texte écrit dans le HTML */
+    position: absolute;
+    bottom: 250%; /* On le monte un peu plus haut pour dégager la vue du point */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--ow-dark-bg);
+    color: var(--ow-neon-blue);
+    padding: 5px 10px;
+    border: 1px solid var(--ow-neon-blue);
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 100; /* Assure que le texte passe au-dessus des autres points ! */
+}
+
+.map-pin:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* --- Grille des listes de cartes (En bas) --- */
+.modes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.mode-card {
+    background-color: rgba(0, 195, 255, 0.05);
+    border: 1px solid rgba(0, 195, 255, 0.3);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.mode-card h4 {
+    color: var(--ow-orange);
+    border-bottom: 1px solid var(--ow-orange);
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.mode-card ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.mode-card li {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+/* =========================================
+   15. PIED DE PAGE (FOOTER) ET SOURCES
+   ========================================= */
+
+/* Le conteneur du Footer */
+.main-footer {
+    background-color: #0b192c;
+    border-top: 2px solid var(--ow-neon-blue);
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.85em;
+    color: #888888;
+    margin-top: 50px; /* Pousse le footer vers le bas, loin du contenu */
+    border-bottom-left-radius: 5px; /* Arrondi pour épouser le conteneur main */
+    border-bottom-right-radius: 5px;
+}
+
+.main-footer p {
+    margin: 5px 0;
+}
+
+/* Le lien vers la page Source dans le footer */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: var(--ow-neon-blue);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px dashed var(--ow-neon-blue);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--ow-orange);
+    border-color: var(--ow-orange);
+}
+
+/* --- LISTE DES SOURCES EXTERNES (Page Source) --- */
+.external-sources-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.external-sources-list li {
+    margin-bottom: 15px;
+}
+
+/* Design du bouton de lien externe */
+.external-sources-list a {
+    display: block;
+    background-color: rgba(0, 195, 255, 0.05);
+    border: 1px solid rgba(0, 195, 255, 0.3);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Le petit symbole de sortie de site caché par défaut */
+.external-sources-list a::after {
+    content: " ↗";
+    color: var(--ow-orange);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Effet au survol : on change la couleur, on décale à droite, on affiche la flèche */
+.external-sources-list a:hover {
+    background-color: rgba(249, 158, 26, 0.1);
+    border-color: var(--ow-orange);
+    color: var(--ow-orange);
+    transform: translateX(10px); /* Décale le bouton vers la droite */
+}
+
+.external-sources-list a:hover::after {
+    opacity: 1; /* Affiche la flèche */
+}

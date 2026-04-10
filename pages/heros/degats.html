@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division Dégâts - Base de données Overwatch</title>
+	<link rel="icon" type="image/png" href="../../images/interface/owlogo.png"">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <button class="hamburger-btn">☰ Menu</button>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Accueil</a></li>
+            <li><a href="../factions/factionsx.html">Factions</a></li>
+            <li><a href="../gameplay.html">Gameplay</a></li>
+            <li><a href="../histoire.html">Histoire</a></li>
+            <li><a href="../esport.html">E-sport</a></li>
+            <li><a href="../mateam.html">Ma Team</a></li>
+            <li><a href="herosx.html" class="active">Héros</a></li>
+            <li><a href="../cartes/cartesx.html">Cartes</a></li>
+        </ul>
+    </nav>
+
+    <main class="data-pad-container" id="haut-de-page">
+        
+        <header class="intro-section">
+            <p><a href="herosx.html">← Retour à la classification des rôles</a></p>
+            
+            <h1>Division : Dégâts (DPS)</h1>
+            <h2>La Puissance de Frappe</h2>
+            <p>
+                Les unités de la division Dégâts sont les forces offensives hautement létales de l'escouade. Leur directive principale : traquer, affaiblir et éliminer les cibles prioritaires avec une puissance de feu supérieure. Ce rôle est celui qui doit exercer <strong>la pression la plus constante</strong> sur la ligne de front et les soutiens adverses.
+            </p>
+            <p>
+                Un agent Dégâts efficace ne se contente pas de tirer : il punit impitoyablement les cibles isolées, brise les lignes défensives en détruisant les boucliers ennemis, et exploite la moindre ouverture créée par son Tank. Avec 22 agents en service, c'est la division la plus fournie et la plus diversifiée de nos archives.
+            </p>
+            
+            <p>
+                Pour naviguer dans ce vaste panel tactique, ces agents sont classifiés en quatre sous-rôles spécialisés :
+            </p>
+            <nav class="anchor-menu">
+                <a href="#flanqueur" class="anchor-btn">Flanqueurs (Flanker)</a>
+                <a href="#eclaireur" class="anchor-btn">Éclaireurs (Recon)</a>
+                <a href="#tireur" class="anchor-btn">Tireurs d'élite (Sharpshooter)</a>
+                <a href="#specialiste" class="anchor-btn">Spécialistes (Specialist)</a>
+            </nav>
+        </header>
+
+        <hr class="sci-fi-divider">
+
+        <section class="heroes-list-section">
+            
+            <div class="table-header-group">
+                <h3 id="flanqueur">Flanqueurs (Flanker)</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            <table class="ow-table heroes-table">
+                <thead>
+                    <tr>
+                        <th>Agent</th>
+                        <th>Doctrine (Compo)</th>
+                        <th>Extrait d'Archive (Histoire)</th>
+                        <th>Complexité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/anran.png" alt="Anran" class="hero-avatar">
+                            <strong>Anran</strong>
+                        </td>
+                        <td>Brawl / Dive</td>
+                        <td>Experte martiale issue de l'école du feu chinoise, cette jeune recrue opère désormais pour Overwatch aux côtés de son frère Wuyang.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/genji.png" alt="Genji" class="hero-avatar">
+                            <strong>Genji</strong>
+                        </td>
+                        <td>Dive</td>
+                        <td>Cyborg ninja du clan Shimada. Ayant pacifié son esprit grâce aux préceptes omniaques, cet agent a récemment réintégré Overwatch.</td>
+                        <td class="stars"><span class="star-filled">★★★★★</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/faucheur.png" alt="Faucheur" class="hero-avatar">
+                            <strong>Faucheur</strong> (Reaper)
+                        </td>
+                        <td>Brawl / Dive</td>
+                        <td>Mercenaire spectral et ancien agent d'Overwatch. Il a déserté La Griffe suite au coup d'État de Vendetta et reste introuvable.</td>
+                        <td class="stars"><span class="star-filled">★★</span><span class="star-empty">☆☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/tracer.png" alt="Tracer" class="hero-avatar">
+                            <strong>Tracer</strong>
+                        </td>
+                        <td>Dive / Brawl</td>
+                        <td>Agent temporel et symbole historique de résilience. Cette opératrice intrépide a officiellement réintégré les forces d'intervention d'Overwatch.</td>
+                        <td class="stars"><span class="star-filled">★★★★</span><span class="star-empty">☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/vendetta.png" alt="Vendetta" class="hero-avatar">
+                            <strong>Vendetta</strong>
+                        </td>
+                        <td>Brawl / Dive</td>
+                        <td>Nouvelle dirigeante suprême de La Griffe. Après avoir éliminé Doomfist, elle orchestre désormais une vaste offensive ouverte contre Overwatch.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/venture.png" alt="Venture" class="hero-avatar">
+                            <strong>Venture</strong>
+                        </td>
+                        <td>Brawl / Dive</td>
+                        <td>Archéologue casse-cou utilisant une excavatrice géante pour s'enfouir sous terre et surprendre l'ennemi.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="table-header-group">
+                <h3 id="eclaireur">Éclaireurs (Recon)</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            <table class="ow-table heroes-table">
+                <thead>
+                    <tr>
+                        <th>Agent</th>
+                        <th>Doctrine (Compo)</th>
+                        <th>Extrait d'Archive (Histoire)</th>
+                        <th>Complexité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/echo.png" alt="Écho" class="hero-avatar">
+                            <strong>Écho</strong>
+                        </td>
+                        <td>Poke / Dive</td>
+                        <td>Entité synthétique polyvalente équipée d'une intelligence artificielle adaptative. Ce prototype évolutif est désormais une unité combattante officielle d'Overwatch.</td>
+                        <td class="stars"><span class="star-filled">★★★★</span><span class="star-empty">☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/freja.png" alt="Freja" class="hero-avatar">
+                            <strong>Freja</strong>
+                        </td>
+                        <td>Poke</td>
+                        <td>Chasseuse de primes indépendante engagée par la Griffe. Ancienne opératrice d'Overwatch, elle démontre de forts scrupules à l'idée d'attaquer sa faction d'origine.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/pharah.png" alt="Pharah" class="hero-avatar">
+                            <strong>Pharah</strong>
+                        </td>
+                        <td>Poke / Dive</td>
+                        <td>Cheffe de la sécurité d'Helix, dominant les cieux avec son armure de combat Raptora Mark VI.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/sombra.png" alt="Sombra" class="hero-avatar">
+                            <strong>Sombra</strong>
+                        </td>
+                        <td>Dive / Brawl</td>
+                        <td>Hackeuse d'élite internationale. Anciennement affiliée à La Griffe, elle a rompu tout contact lors de l'ascension de Vendetta.</td>
+                        <td class="stars"><span class="star-filled">★★★★</span><span class="star-empty">☆</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="table-header-group">
+                <h3 id="tireur">Tireurs d'élite (Sharpshooter)</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            <table class="ow-table heroes-table">
+                <thead>
+                    <tr>
+                        <th>Agent</th>
+                        <th>Doctrine (Compo)</th>
+                        <th>Extrait d'Archive (Histoire)</th>
+                        <th>Complexité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/ashe.png" alt="Ashe" class="hero-avatar">
+                            <strong>Ashe</strong>
+                        </td>
+                        <td>Poke</td>
+                        <td>La cheffe ambitieuse et calculatrice du gang Deadlock, toujours accompagnée de son majordome omniaque, B.O.B.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/cassidy.png" alt="Cassidy" class="hero-avatar">
+                            <strong>Cassidy</strong> <span class="redacted">McCree</span>
+                        </td>
+                        <td>Brawl / Poke</td>
+                        <td>Un hors-la-loi repenti, armé d'un Pacificateur, qui distribue la justice selon ses propres termes.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/fatale.png" alt="Fatale" class="hero-avatar">
+                            <strong>Fatale</strong> (Widowmaker)
+                        </td>
+                        <td>Poke</td>
+                        <td>Tireuse d'élite impitoyable soumise à un conditionnement neural sévère. Elle a déserté La Griffe après l'avènement de Vendetta.</td>
+                        <td class="stars"><span class="star-filled">★★★★★</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/hanzo.png" alt="Hanzo" class="hero-avatar">
+                            <strong>Hanzo</strong>
+                        </td>
+                        <td>Poke</td>
+                        <td>Un archer mortel et assassin rônin, luttant pour laver son honneur et trouver la rédemption.</td>
+                        <td class="stars"><span class="star-filled">★★★★</span><span class="star-empty">☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/sojourn.png" alt="Sojourn" class="hero-avatar">
+                            <strong>Sojourn</strong>
+                        </td>
+                        <td>Poke / Brawl / Dive</td>
+                        <td>Vétérane lourdement cybernétisée possédant une expertise tactique inégalée. Elle assume actuellement le commandement suprême des nouvelles forces d'Overwatch.</td>
+                        <td class="stars"><span class="star-filled">★★★★</span><span class="star-empty">☆</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="table-header-group">
+                <h3 id="specialiste">Spécialistes (Specialist)</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            <table class="ow-table heroes-table">
+                <thead>
+                    <tr>
+                        <th>Agent</th>
+                        <th>Doctrine (Compo)</th>
+                        <th>Extrait d'Archive (Histoire)</th>
+                        <th>Complexité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/bastion.png" alt="Bastion" class="hero-avatar">
+                            <strong>Bastion</strong>
+                        </td>
+                        <td>Brawl / Poke</td>
+                        <td>Un automate de la crise des Omniums, fasciné par la nature mais programmé pour la guerre.</td>
+                        <td class="stars"><span class="star-filled">★★</span><span class="star-empty">☆☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/chacal.png" alt="Chacal" class="hero-avatar">
+                            <strong>Chacal</strong> (Junkrat)
+                        </td>
+                        <td>Brawl / Poke</td>
+                        <td>Un anarchiste obsédé par les explosifs, semant la destruction pour le simple plaisir du chaos.</td>
+                        <td class="stars"><span class="star-filled">★★</span><span class="star-empty">☆☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/emre.png" alt="Emre" class="hero-avatar">
+                            <strong>Emre</strong>
+                        </td>
+                        <td>Brawl / Poke</td>
+                        <td>Agent de la Griffe partiellement contrôlé par une matrice artificielle. Ancien d'Overwatch, il manifeste une grande réticence à combattre ses ex-alliés.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/mei.png" alt="Mei" class="hero-avatar">
+                            <strong>Mei</strong>
+                        </td>
+                        <td>Brawl</td>
+                        <td>Une climatologue brillante qui utilise ses inventions pour manipuler la météo et sauver la planète.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/soldat76.png" alt="Soldat : 76" class="hero-avatar">
+                            <strong>Soldat : 76</strong>
+                        </td>
+                        <td>Poke / Brawl</td>
+                        <td>L'ancien commandant d'Overwatch, Jack Morrison, menant désormais une guerre solitaire pour découvrir la vérité.</td>
+                        <td class="stars"><span class="star-filled">★</span><span class="star-empty">☆☆☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/symmetra.png" alt="Symmetra" class="hero-avatar">
+                            <strong>Symmetra</strong>
+                        </td>
+                        <td>Brawl</td>
+                        <td>Architecte de Vishkar manipulant la lumière solide pour façonner la réalité à sa guise.</td>
+                        <td class="stars"><span class="star-filled">★★★</span><span class="star-empty">☆☆</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hero-id">
+                            <img src="../../images/heros/torbjorn.png" alt="Torbjörn" class="hero-avatar">
+                            <strong>Torbjörn</strong>
+                        </td>
+                        <td>Poke / Brawl</td>
+                        <td>L'ingénieur en chef d'Overwatch, créateur de tourelles de défense redoutables et d'armes surpuissantes.</td>
+                        <td class="stars"><span class="star-filled">★★</span><span class="star-empty">☆☆☆</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+		
+	<footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2026 Blizzard Entertainment, Inc. Tous droits réservés. Overwatch est une marque déposée de Blizzard Entertainment.</p>
+            <p><strong>Projet Scolaire (EPS Châtelet)</strong> - Réalisé dans le cadre du module "Conception de pages Web". Ce site n'a aucun but commercial.</p>
+            <ul class="footer-links">
+                <li><a href="../sources.html">Sources & Mentions Légales</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+	</main>
+</body>
+
+</html>

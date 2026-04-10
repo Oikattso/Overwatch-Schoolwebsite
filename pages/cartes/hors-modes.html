@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zones Hors-Modes - Base de données Overwatch</title>
+	<link rel="icon" type="image/png" href="../../images/interface/owlogo.png"">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <button class="hamburger-btn">☰ Menu</button>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Accueil</a></li>
+            <li><a href="../factions/factionsx.html">Factions</a></li>
+            <li><a href="../gameplay.html">Gameplay</a></li>
+            <li><a href="../histoire.html">Histoire</a></li>
+            <li><a href="../esport.html">E-sport</a></li>
+            <li><a href="../mateam.html">Ma Team</a></li>
+            <li><a href="../heros/herosx.html">Héros</a></li>
+            <li><a href="cartesx.html" class="active">Cartes</a></li>
+        </ul>
+    </nav>
+
+    <main class="data-pad-container" id="haut-de-page">
+        
+        <header class="intro-section">
+            <p><a href="cartesx.html">← Retour aux Modes de Jeu</a></p>
+            
+            <h1>Zones Hors-Modes</h1>
+            <h2>Forge, Entraînement et Archives Perdues</h2>
+            <p>
+                Toutes les opérations ne se déroulent pas sur des théâtres de guerre officiels. Cette archive répertorie les environnements simulés, les outils de développement ouverts à la communauté, ainsi que les projets classifiés qui n'ont jamais vu le jour. 
+            </p>
+        </header>
+
+        <hr class="sci-fi-divider">
+
+        <section class="gameplay-section">
+            <div class="table-header-group">
+                <h3>Environnements Simulés & Maîtrise</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            
+            <div class="modes-grid" style="margin-top: 20px;">
+                
+                <div class="mode-card" style="border-color: var(--ow-orange);">
+                    <h4 style="color: var(--ow-orange);">La Forge (Workshop)</h4>
+                    <p>
+                        Un puissant outil de script intégré permettant aux agents de créer des "Parties Personnalisées". Les créations vont de l'entraînement intensif à la visée, aux duels d'échauffement, jusqu'à des concepts absurdes comme des clones de <em>Flappy Bird</em>. Des cartes vierges ont été créées spécifiquement pour cet usage :
+                    </p>
+                    <ul>
+                        <li>Chambre de la Forge (Chamber)</li>
+                        <li>Étendue de la Forge (Expanse)</li>
+                        <li>Île de la Forge (Island)</li>
+                        <li>Fond Vert de la Forge (Green Screen)</li>
+                    </ul>
+                </div>
+
+                <div class="mode-card" style="border-color: var(--ow-neon-blue);">
+                    <h4 style="color: var(--ow-neon-blue);">Centres d'Entraînement</h4>
+                    <p>Installations de base réservées à l'échauffement tactique et à l'apprentissage des recrues.</p>
+                    <ul>
+                        <li><strong>Le Tutoriel :</strong> Simulation basique d'introduction.</li>
+                        <li><strong>Le Champ de Tir (Practice Range) :</strong> Zone équipée de cibles robotiques fixes et mobiles pour tester l'armement.</li>
+                    </ul>
+                </div>
+
+                <div class="mode-card" style="border-color: #ff3333; grid-column: 1 / -1;">
+                    <h4 style="color: #ff3333;">Parcours de Maîtrise (Hero Mastery) <em>[Projet Abandonné]</em></h4>
+                    <p>
+                        <strong>Rapport d'échec :</strong> Ce mode devait initialement permettre aux agents de prouver leur expertise sur chaque héros via des courses d'obstacles chronométrées. Le projet a été officiellement abandonné par le haut commandement suite à un manque d'engagement critique des troupes.
+                    </p>
+                    <p>
+                        <strong>Analyse de l'échec :</strong> L'abandon s'explique par un modèle de conception défectueux. Sur une cinquantaine d'agents existants, seuls 17 ont reçu leur parcours. Pire encore, l'architecture des niveaux était statique : l'absence cruelle de génération procédurale a anéanti toute rejouabilité. Une fois le score maximal atteint, la simulation n'offrait plus aucun intérêt tactique.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="sci-fi-divider">
+
+        <section class="map-list-section">
+            <div class="table-header-group">
+                <h3>Archives Perdues & Projets Non-Canons</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            
+            <article class="history-block" style="margin-top: 20px;">
+                <h4 style="color: var(--ow-neon-blue); font-size: 22px;">Anomalie Architecturale : Talantis</h4>
+                <p>
+                    Une carte non-canonique et inachevée conçue en collaboration directe avec la communauté ("Twitch Makes a Map"). Censée représenter une base sous-marine secrète de La Griffe infestée de poissons géants et de pièges mortels, elle fut brièvement intégrée à l'Arcade pour un événement limité avant d'être définitivement retirée des serveurs de la base de données.
+                </p>
+            </article>
+
+            <h4 style="color: var(--ow-orange); font-size: 22px; margin-top: 40px;">Rapport des Théâtres Annulés (Deleted Maps)</h4>
+            <p>
+                Des fouilles dans les données sources ont révélé des concepts d'environnements (artworks, prototypes 3D ou assets) qui n'ont jamais dépassé le stade de la planification. La majorité a été abandonnée avec la suppression du mode Attaque.
+            </p>
+
+            <table class="ow-table heroes-table">
+                <thead>
+                    <tr>
+                        <th>Nom de Code du Projet</th>
+                        <th>Mode d'Engagement Prévu</th>
+                        <th>Statut de l'Archive</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>L'Iris</strong></td>
+                        <td>Contrôle</td>
+                        <td><span style="color: #ff4c4c;">Annulé</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Amazon</strong></td>
+                        <td>Attaque (Assaut)</td>
+                        <td><span style="color: #ff4c4c;">Annulé</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Berlin</strong></td>
+                        <td>Attaque (Assaut)</td>
+                        <td><span style="color: #ff4c4c;">Annulé</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cairo</strong></td>
+                        <td>Escorte</td>
+                        <td><span style="color: #ff4c4c;">Annulé (Concept partiellement recyclé pour le Temple d'Anubis)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Galapagos</strong></td>
+                        <td>Contrôle</td>
+                        <td><span style="color: #ff4c4c;">Annulé</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>India</strong></td>
+                        <td>Contrôle</td>
+                        <td><span style="color: #ff4c4c;">Annulé (Inspirations recyclées pour Suravasa)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Iron Star</strong></td>
+                        <td>Escorte</td>
+                        <td><span style="color: #ff4c4c;">Annulé</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kyoto Temple</strong></td>
+                        <td>Contrôle</td>
+                        <td><span style="color: #ff4c4c;">Annulé (Inspirations recyclées pour Hanamura)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Londres</strong></td>
+                        <td>Attaque (Assaut)</td>
+                        <td><span style="color: #ff4c4c;">Annulé (Refondu en mode Hybride pour King's Row)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>San Joaquin</strong></td>
+                        <td>Attaque (Assaut)</td>
+                        <td><span style="color: #ff4c4c;">Annulé</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Le Bayou</strong></td>
+                        <td>Escorte</td>
+                        <td><span style="color: #ff4c4c;">Annulé</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+		
+	<footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2026 Blizzard Entertainment, Inc. Tous droits réservés. Overwatch est une marque déposée de Blizzard Entertainment.</p>
+            <p><strong>Projet Scolaire (EPS Châtelet)</strong> - Réalisé dans le cadre du module "Conception de pages Web". Ce site n'a aucun but commercial.</p>
+            <ul class="footer-links">
+                <li><a href="../sources.html">Sources & Mentions Légales</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+	</main>
+</body>
+
+</html>

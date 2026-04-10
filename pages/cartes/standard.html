@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opérations Standard - Base de données Overwatch</title>
+	<link rel="icon" type="image/png" href="../../images/interface/owlogo.png"">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <button class="hamburger-btn">☰ Menu</button>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Accueil</a></li>
+            <li><a href="../factions/factionsx.html">Factions</a></li>
+            <li><a href="../gameplay.html">Gameplay</a></li>
+            <li><a href="../histoire.html">Histoire</a></li>
+            <li><a href="../esport.html">E-sport</a></li>
+            <li><a href="../mateam.html">Ma Team</a></li>
+            <li><a href="../heros/herosx.html">Héros</a></li>
+            <li><a href="cartesx.html" class="active">Cartes</a></li>
+        </ul>
+    </nav>
+
+    <main class="data-pad-container" id="haut-de-page">
+        
+        <header class="intro-section">
+            <p><a href="cartesx.html">← Retour aux Modes de Jeu</a></p>
+            
+            <h1>Opérations Standard</h1>
+            <h2>Partie Rapide & Compétitive</h2>
+            <p>
+                Les opérations standard constituent le cœur tactique d'Overwatch. Elles se déclinent en deux formats d'engagement : les <strong>Parties Rapides</strong> (simulations d'entraînement) et les <strong>Parties Compétitives</strong> (déploiements classés). Ces affrontements sont structurés soit en escouades de <strong>5v5 avec rôles prédéfinis</strong> (1 Tank, 2 Dégâts, 2 Soutiens), soit en <strong>6v6 sans restriction de rôle</strong> (Open Queue).
+            </p>
+            
+            <div class="warning-box">
+                <strong>⚠️ AVIS DE RESTRICTION TACTIQUE :</strong><br>
+                Nos archives recensent un total de 36 théâtres d'opérations répartis en 7 modes de jeu. Cependant, suite aux retours opérationnels des agents sur le terrain, des restrictions ont été appliquées :<br>
+                - Les 2 zones du mode <strong>Clash</strong> sont désormais restreintes aux simulations Arcade et Non-Classées.<br>
+                - Les 5 zones du mode <strong>Attaque (Assaut)</strong> ont été retirées des rotations officielles et ne sont accessibles que lors d'événements spéciaux en Arcade.
+            </div>
+        </header>
+
+        <hr class="sci-fi-divider">
+
+        <section class="map-interactive-section">
+            <h3>Système de Localisation Globale (SIG) - Planisphère</h3>
+            <p>Sélectionnez un point d'engagement sur le planisphère pour identifier le théâtre d'opération. Les théâtres de base sont en BLANC, les zones Clash en ORANGE, et les théâtres d'Attaque restreints en ROUGE.</p>
+
+            <div class="world-map-container" style="background-image: url('../../images/cartes/planisphere.png');">
+                
+                <div class="off-world-zone">
+                    <h4>Hors-Monde</h4>
+                    <div class="map-pin pin-attack off-world-pin" data-tooltip="Colonie Lunaire Horizon (Attaque, Restreint)"></div>
+                </div>
+
+                <div class="map-pin" style="top: 30%; left: 18%;" data-tooltip="Route 66 (Escorte)"></div>
+                <div class="map-pin" style="top: 31.5%; left: 17.5%;" data-tooltip="Hollywood (Hybride)"></div>
+                <div class="map-pin" style="top: 28.5%; left: 29%;" data-tooltip="Midtown (Hybride)"></div>
+                <div class="map-pin" style="top: 26%; left: 28%;" data-tooltip="New Queen Street (Avancée)"></div>
+                <div class="map-pin" style="top: 30%; left: 17%;" data-tooltip="Blizzard World (Hybride)"></div>
+                
+                <div class="map-pin" style="top: 40%; left: 22.8%;" data-tooltip="Dorado (Escorte)"></div>
+                <div class="map-pin" style="top: 38%; left: 28.4%;" data-tooltip="Havana (Escorte)"></div>
+                <div class="map-pin" style="top: 57.5%; left: 30%;" data-tooltip="Runasapi (Avancée)"></div>
+                <div class="map-pin" style="top: 62%; left: 38%;" data-tooltip="Paraíso (Hybride)"></div>
+
+                <div class="map-pin" style="top: 21%; left: 49.8%;" data-tooltip="King's Row (Hybride)"></div>
+                <div class="map-pin pin-attack" style="top: 23.25%; left: 51%;" data-tooltip="Paris (Attaque, Restreint)"></div>
+                <div class="map-pin" style="top: 23%; left: 53%;" data-tooltip="Eichenwalde (Hybride)"></div>
+                <div class="map-pin" style="top: 28%; left: 48%;" data-tooltip="Esperança (Avancée)"></div>
+                <div class="map-pin" style="top: 26%; left: 52%;" data-tooltip="Circuit Royal (Escorte)"></div>
+                <div class="map-pin" style="top: 26.3%; left: 54%;" data-tooltip="Colosseo & Rialto (Italie)"></div>
+                <div class="map-pin" style="top: 30%; left: 49%;" data-tooltip="Observatoire: Gibraltar (Escorte)"></div>
+                <div class="map-pin" style="top: 29%; left: 56.2%;" data-tooltip="Ilios (Contrôle)"></div>
+
+                <div class="map-pin" style="top: 32%; left: 48%;" data-tooltip="Aatlis (Point Chaud)"></div>
+                <div class="map-pin pin-clash" style="top: 34%; left: 58.5%;" data-tooltip="Throne d'Anubis (Clash)"></div>
+                <div class="map-pin pin-attack" style="top: 35.5%; left: 58.5%;" data-tooltip="Temple d'Anubis (Attaque, Restreint)"></div>
+                <div class="map-pin" style="top: 32%; left: 62%;" data-tooltip="Oasis (Contrôle)"></div>
+                <div class="map-pin" style="top: 45%; left: 52%;" data-tooltip="Numbani (Hybride)"></div>
+
+                <div class="map-pin pin-attack" style="top: 17.5%; left: 58.5%;" data-tooltip="Usine Volskaya (Attaque, Restreint)"></div>
+                <div class="map-pin" style="top: 35.5%; left: 78.5%;" data-tooltip="Lijiang Tower (Contrôle)"></div>
+                <div class="map-pin" style="top: 34.5%; left: 73.5%;" data-tooltip="Népal & Shambali (Asie)"></div>
+                <div class="map-pin" style="top: 37%; left: 73%;" data-tooltip="Suravasa (Point Chaud)"></div>
+                <div class="map-pin" style="top: 30.5%; left: 86%;" data-tooltip="Busan (Contrôle)"></div>
+                <div class="map-pin pin-clash" style="top: 30%; left: 89%;" data-tooltip="Hanaoka (Clash)"></div>
+                <div class="map-pin pin-attack" style="top: 30%; left: 89.5%;" data-tooltip="Hanamura (Attaque, Restreint)"></div>
+                <div class="map-pin" style="top: 61%; left: 99%;" data-tooltip="Samoa (Contrôle)"></div>
+                <div class="map-pin" style="top: 63%; left: 89%;" data-tooltip="Junkertown & New Junk City (Australie)"></div>
+
+                <div class="map-pin" style="top: 95%; left: 50%;" data-tooltip="Péninsule Antarctique (Contrôle)"></div>
+            </div>
+        </section>
+
+        <hr class="sci-fi-divider">
+
+        <section class="map-list-section">
+            <h3>Classification par Protocole d'Engagement</h3>
+            
+            <div class="modes-grid">
+                <div class="mode-card">
+                    <h4>Escorte (Payload)</h4>
+                    <ul>
+                        <li>Circuit Royal (Monaco)</li>
+                        <li>Dorado (Mexique)</li>
+                        <li>Havana (Cuba)</li>
+                        <li>Junkertown (Australie)</li>
+                        <li>Rialto (Italie)</li>
+                        <li>Route 66 (USA)</li>
+                        <li>Monastère Shambali (Népal)</li>
+                        <li>Observatoire: Gibraltar</li>
+                    </ul>
+                </div>
+
+                <div class="mode-card">
+                    <h4>Hybride</h4>
+                    <ul>
+                        <li>Blizzard World (USA)</li>
+                        <li>Eichenwalde (Allemagne)</li>
+                        <li>Hollywood (USA)</li>
+                        <li>King’s Row (Royaume-Uni)</li>
+                        <li>Midtown (USA)</li>
+                        <li>Numbani (Numbani)</li>
+                        <li>Paraíso (Brésil)</li>
+                    </ul>
+                </div>
+
+                <div class="mode-card">
+                    <h4>Contrôle</h4>
+                    <ul>
+                        <li>Péninsule Antarctique</li>
+                        <li>Busan (Corée du Sud)</li>
+                        <li>Ilios (Grèce)</li>
+                        <li>Lijiang Tower (Chine)</li>
+                        <li>Népal (Népal)</li>
+                        <li>Oasis (Irak)</li>
+                        <li>Samoa (Samoa)</li>
+                    </ul>
+                </div>
+
+                <div class="mode-card">
+                    <h4>Avancée (Push)</h4>
+                    <ul>
+                        <li>Colosseo (Italie)</li>
+                        <li>Esperança (Portugal)</li>
+                        <li>New Queen Street (Canada)</li>
+                        <li>Runasapi (Pérou)</li>
+                    </ul>
+                </div>
+
+                <div class="mode-card">
+                    <h4>Point Chaud (Flashpoint)</h4>
+                    <ul>
+                        <li>Aatlis (Maroc)</li>
+                        <li>New Junk City (Australie)</li>
+                        <li>Suravasa (Inde)</li>
+                    </ul>
+                </div>
+
+                <div class="mode-card">
+                    <h4>Clash <em>[Limité]</em></h4>
+                    <ul>
+                        <li>Hanaoka (Japon)</li>
+                        <li>Throne d’Anubis (Égypte)</li>
+                    </ul>
+                </div>
+
+                <div class="mode-card">
+                    <h4>Attaque (Assaut) <em>[Limité]</em></h4>
+                    <ul>
+                        <li>Colonie Lunaire Horizon</li>
+                        <li>Hanamura (Japon)</li>
+                        <li>Paris (France)</li>
+                        <li>Temple d’Anubis (Égypte)</li>
+                        <li>Usine Volskaya (Russie)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+		
+	<footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2026 Blizzard Entertainment, Inc. Tous droits réservés. Overwatch est une marque déposée de Blizzard Entertainment.</p>
+            <p><strong>Projet Scolaire (EPS Châtelet)</strong> - Réalisé dans le cadre du module "Conception de pages Web". Ce site n'a aucun but commercial.</p>
+            <ul class="footer-links">
+                <li><a href="../sources.html">Sources & Mentions Légales</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+	</main>
+</body>
+
+</html>
