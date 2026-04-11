@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chronologie - Base de données Overwatch</title>
-	<link rel="icon" type="image/png" href="../images/interface/owlogo.png"">
+    <title>Histoire et Chronologie - Base de données Overwatch</title>
+    <link rel="icon" type="image/png" href="../images/logo-ow.png">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -23,71 +23,87 @@
         </ul>
     </nav>
 
-    <main class="data-pad-container">
+    <main class="data-pad-container" id="haut-de-page">
         
         <header class="intro-section">
-            <h1>Chronologie des Événements</h1>
-            <h2>Archives Historiques Mondiales</h2>
+            <h1>Chronologie Mondiale</h1>
+            <h2>Les événements qui ont façonné notre époque</h2>
             <p>
-                Pour comprendre les conflits d'aujourd'hui, il faut étudier les tragédies d'hier. 
-                Consultez la ligne du temps ci-dessous pour naviguer rapidement vers les événements clés qui ont façonné notre monde, de l'émergence des Omniums à la chute d'Overwatch.
+                Le monde d'Overwatch est défini par une série de conflits majeurs entre l'humanité, les intelligences artificielles (Omniaques) et les syndicats de l'ombre. Cette archive retrace les grands bouleversements géopolitiques, de la première rébellion robotique jusqu'à la guerre ouverte actuelle.
             </p>
+            
+            <nav class="timeline-nav">
+                <a href="#crise" class="timeline-link">La Crise des Omniums</a>
+                <span class="timeline-connector"></span>
+                <a href="#age-or" class="timeline-link">L'Âge d'Or</a>
+                <span class="timeline-connector"></span>
+                <a href="#chute" class="timeline-link">La Chute & Loi Petras</a>
+                <span class="timeline-connector"></span>
+                <a href="#rappel" class="timeline-link">Le Rappel (Invasion)</a>
+                <span class="timeline-connector"></span>
+                <a href="#guerre" class="timeline-link">Le Règne de La Griffe</a>
+            </nav>
         </header>
-
-        <nav class="timeline-nav">
-            <a href="#age-or" class="timeline-link">L'Âge d'Or</a>
-            <span class="timeline-connector"></span>
-            <a href="#crise-omnium" class="timeline-link">La Crise des Omniums</a>
-            <span class="timeline-connector"></span>
-            <a href="#creation-overwatch" class="timeline-link">Création d'Overwatch</a>
-            <span class="timeline-connector"></span>
-            <a href="#chute" class="timeline-link">La Chute</a>
-            <span class="timeline-connector"></span>
-            <a href="#rappel" class="timeline-link">Le Rappel</a>
-        </nav>
 
         <hr class="sci-fi-divider">
 
         <section class="history-content">
             
-            <article id="age-or" class="history-block">
-                <h3>L'Âge d'Or de la Robotique</h3>
+            <div class="table-header-group">
+                <h3 id="crise">La Crise des Omniums</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            <article class="history-block">
                 <p>
-                    Avant le chaos, l'humanité a connu une ère de prospérité sans précédent grâce à la création des Omniums, d'immenses usines automatisées produisant des robots dotés d'intelligence artificielle : les Omniaques. Ils devaient garantir l'égalité et la croissance économique mondiale.
+                    L'humanité a fait face à une menace sans précédent lors de la Crise des Omniums, une guerre mondiale contre des robots rebelles qu'aucun pays ne parvenait à contenir seul[cite: 1681, 1682]. En réponse, les Nations Unies ont fondé Overwatch, une force d'intervention d'élite réunissant les meilleurs soldats, scientifiques et aventuriers du monde[cite: 1681, 1693]. Grâce à une série de raids audacieux, l'équipe fondatrice a réussi à détruire les protocoles de commandement des armées omniaques, sauvant ainsi la planète de l'annihilation[cite: 1727, 1728].
                 </p>
             </article>
 
-            <article id="crise-omnium" class="history-block">
-                <h3>La Crise des Omniums</h3>
+            <div class="table-header-group">
+                <h3 id="age-or">L'Âge d'Or d'Overwatch</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            <article class="history-block">
                 <p>
-                    Sans avertissement, les Omniums se sont réactivés d'eux-mêmes et ont lancé une campagne militaire mondiale visant à éradiquer l'humanité. Les armées traditionnelles, dépassées par l'adaptabilité des machines, ont rapidement cédé du terrain.
+                    Suite à sa victoire, Overwatch a vu son mandat étendu par l'ONU pour maintenir la paix mondiale[cite: 1749]. Le monde est entré dans une ère de prospérité, portée par les innovations de l'organisation dans des domaines tels que l'exploration spatiale, la recherche médicale et la protection de l'environnement (notamment via la création des éco-laboratoires)[cite: 1753, 1754]. L'organisation est devenue une véritable institution mondiale, symbolisant l'espoir pour toute une génération[cite: 1757, 1762].
                 </p>
             </article>
 
-            <article id="creation-overwatch" class="history-block">
-                <h3>Création de l'Équipe Overwatch</h3>
+            <div class="table-header-group">
+                <h3 id="chute">La Chute et la Loi Petras</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            <article class="history-block">
                 <p>
-                    Face à l'extinction, les Nations Unies ont formé une unité d'élite secrète regroupant les meilleurs soldats, scientifiques et aventuriers du monde. Cette force de frappe, nommée Overwatch, a réussi à démanteler les centres de commandement omniaques et à ramener la paix.
+                    Vingt ans plus tard, l'influence d'Overwatch s'est effondrée sous le poids d'allégations de corruption, de mauvaise gestion et de violations des droits humains, notamment suite aux révélations sur les opérations secrètes de la division "Blackwatch"[cite: 1785, 1791, 1869]. Les tensions internes ont culminé avec la destruction du quartier général suisse dans une explosion qui a prétendument coûté la vie au commandant Jack Morrison et à Gabriel Reyes[cite: 1872, 1873, 1877]. Acculée, l'ONU a officiellement démantelé l'organisation[cite: 1908, 1909]. La "Loi Petras" a été ratifiée, rendant illégale toute activité liée à Overwatch[cite: 1909].
                 </p>
             </article>
 
-            <article id="chute" class="history-block">
-                <h3>La Chute et la Loi Petras</h3>
+            <div class="table-header-group">
+                <h3 id="rappel">Le Secteur Zéro et le Rappel</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            <article class="history-block">
                 <p>
-                    Après des décennies de paix, Overwatch a été frappé par des allégations de corruption, de violations des droits humains et de sédition. L'explosion du quartier général suisse, tuant le commandant Jack Morrison, a marqué la fin de l'organisation. La loi Petras a ensuite rendu illégale toute activité d'Overwatch.
+                    Dans les années qui ont suivi, les tensions entre humains et omniaques se sont ravivées. Face à l'oppression subie par son peuple, l'omniaque Ramattra a formé le Secteur Zéro[cite: 170, 211, 212]. Le groupe extrémiste a finalement lancé une invasion à l'échelle mondiale, frappant simultanément des villes comme Paris, Rio de Janeiro et Toronto[cite: 141, 147, 148, 2031]. Face à l'incapacité des armées régulières à repousser cette attaque [cite: 318], l'ancien agent Winston a bravé la Loi Petras pour lancer un "Rappel" d'urgence, reformant illégalement Overwatch pour protéger la population[cite: 1981, 1983].
                 </p>
             </article>
 
-            <article id="rappel" class="history-block">
-                <h3>Le Rappel (L'ère actuelle)</h3>
+            <div class="table-header-group">
+                <h3 id="guerre">Le Règne de La Griffe</h3>
+                <a href="#haut-de-page" class="back-to-top-btn">↑ Remonter</a>
+            </div>
+            <article class="history-block">
                 <p>
-                    Avec l'émergence de nouvelles menaces terroristes comme le Secteur Zéro et La Griffe, le scientifique Winston a pris la lourde décision d'ignorer la loi Petras et de lancer le protocole de Rappel, invitant les anciens agents à reprendre du service en secret.
+                    Pendant ce temps, l'organisation terroriste paramilitaire La Griffe, qui opérait dans l'ombre et profitait du chaos[cite: 846, 848], a subi un changement de direction brutal. Vendetta a violemment évincé Doomfist du pouvoir pour imposer sa propre vision impitoyable[cite: 1205, 1206]. Jugeant le moment opportun, elle a ordonné un assaut massif contre l'Observatoire: Gibraltar[cite: 1235]. Bien qu'Overwatch ait tenté de se défendre avec l'aide de nouvelles recrues, l'organisation a été contrainte d'abandonner sa base, laissant La Griffe étendre sa conquête sur les infrastructures mondiales[cite: 1246, 1247, 1248].
                 </p>
             </article>
 
         </section>
-		
-	<footer class="main-footer">
+
+    </main>
+
+    <footer class="main-footer">
         <div class="footer-content">
             <p>© 2026 Blizzard Entertainment, Inc. Tous droits réservés. Overwatch est une marque déposée de Blizzard Entertainment.</p>
             <p><strong>Projet Scolaire (EPS Châtelet)</strong> - Réalisé dans le cadre du module "Conception de pages Web". Ce site n'a aucun but commercial.</p>
@@ -96,8 +112,6 @@
             </ul>
         </div>
     </footer>
-    
-	</main>
-</body>
 
+</body>
 </html>
