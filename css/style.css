@@ -757,3 +757,31 @@ select.ow-input option {
 .external-sources-list a:hover::after {
     opacity: 1; /* Affiche la flèche */
 }
+
+/* =========================================
+   16. OPTIMISATION MOBILE (RESPONSIVE)
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. On passe les grilles sur une seule colonne */
+    .modes-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    /* 2. On réduit la taille des gros titres pour qu'ils rentrent */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    /* 3. On ajuste les marges pour gagner de la place sur les petits écrans */
+    .data-pad-container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    /* 4. On permet aux grands tableaux de scroller horizontalement pour ne pas casser la page */
+    .heroes-list-section {
+        overflow-x: auto;
+    }
+}
